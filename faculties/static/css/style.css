@@ -1,0 +1,175 @@
+		/* Theme-Name:Project UI */
+		/* Teamwork */
+		/* Date:07/01/2020 */
+
+.user-font{
+font-size:80px!important;
+}
+
+	/* starts first section */
+		.bg-img{
+			background-image:url("../img/banner1.jpg");
+			background-position:center;
+			background-size:cover; 	
+			
+			width:64%;
+		}
+		.back-img{
+			background-color:rgba(0,0,0,0.7);
+		}
+		.style{
+			font-family:cursive;
+			margin-top:500px;
+		}
+	/* ends first section */
+	
+	/* starts second section */
+		.logo{
+			margin-top:-500px; 
+			
+		}	
+		.logo img{
+			
+			margin-left:30px;
+			width:80%;
+		}
+		.button{
+			border:1px solid rgba(0,0,0,0.2);
+		
+			
+		}
+		.logo{
+			margin-left:800px;
+		}			
+		.button a{
+			text-decoration:none;
+		}
+		
+		.button:hover{
+			box-shadow:0px 0px 20px 2px #8cbd06;
+		}
+		
+			
+/* ends second section */
+/* starts section3 */
+
+		.bg-color{
+			background-color:#0ab7d1;
+		}
+		
+		.form-style {
+			width:25%;
+			height:350px;
+			
+
+		}
+		.log-style{
+			margin-top:60px;
+			margin-left:-10px;
+		}
+
+		.text-style{
+			margin-left:150px;
+		}
+		.text-style img{
+			width:10%;
+			
+		}
+		.text-style h5{
+			margin-left:80px;
+			margin-top:-40px;
+		}
+		.form-style input,button {
+		  width: 100%;
+		}
+		.foot{
+			margin-top:105px;
+			background:#08a7bf;
+		}
+		.change-size img{
+			width:80%;
+		}
+/* ends section 3  */
+/* vishnu */
+/*.bor{
+	border:1px solid red;
+}*/
+.fontcol {
+    font-family:fantasy;
+    font-size: 30px;
+}
+
+@media (max-width:768px)
+{
+.t-center{
+margin-left:100px;
+}
+.t-style{
+	width:50%;
+}
+}
+/* -------------------------------------------------------------starts media section--------------------------------*/
+
+
+			@media(max-width:768px){
+				.bg-img{
+					width:50%;
+				}
+				.style h3{
+					font-size:15px;
+				}
+				.logo{
+					margin-left:140px;
+					margin-top:-450px;
+				}
+				.logo img{
+					width:100%;
+					margin-left:-5px;
+				}
+				.button{
+					width:100%;	
+				}
+				.button h3{
+					font-size:15px;
+				}
+				.text-h{
+					font-size:18px;
+				}
+				.form-style{
+					width:90%;
+					height:300px;
+					margin-left:50px;
+							
+				}
+				.user-font{
+font-size:20px!important;
+}
+				.space{
+					margin:10px;
+				}
+			}
+
+/* -------------------------------------------------------------ends media section--------------------------------*/
+/*...............Faculty page............................*/
+.bg-table{width:100%;}
+.box-bg{
+	
+	outline:none;
+}
+.box-bg:focus{
+box-shadow:0px 0px 6px 2px blue;
+}
+.head{
+	font-family:cursive;
+}
+/*.................................Facuilty page end.......*/
+
+ /*----------------------------- dashboard media query----------------------------- */
+ 
+ @media (max-width:768px){
+	.p-hide li a p{
+		display:none;
+	}
+ }
+ /*----------------------------- dashboard media query ends----------------------------- */
+ 

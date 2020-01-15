@@ -1,0 +1,80 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Orisys Academy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link  rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+	<link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+	 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">   
+		
+  </head>
+  <body>
+
+<!----------------------------------------Faculity Batch start---------------------------------------------->
+
+<section> 
+	<div class="container">
+		<div class="row">
+		
+			<div class="col-md-6 text-center bor py-4 t-center">
+			  <h2 class="fontcol">Student List</h2>
+			</div>
+			
+				<div class="col-md py-3 bor text-right ">
+					<p class=""><kbd>Search</kbd>  
+					<input class="p-2" id="myInput" type="text" placeholder="Search.."></p>
+					
+				</div>
+				<div class="text-left my-3">
+					<a href="{% url 'faculty_student_add' %}" class="btn btn-outline-secondary  btn-arrow-right" role="button">Add new student +</a>
+					  </div>
+				
+			<div class="col-md-12">
+				<div style="overflow-x:auto;">
+				<table class="table table-hover">
+				  
+				  <thead>
+					<tr>
+					  <th>Addmission no.</th>
+					  <th>Name of Student</th>
+					  <th>Roll.No</th>
+					  <th>Email</th>
+					  <th>Details</th>
+					</tr>
+				  </thead>
+				  
+					  <tbody id="myTable">
+					  {%if students%}
+					  {%for s in students%}
+						<tr>
+						  <td>{{s.sadd_no}}</td>
+						  <td>{{s.sname}}</td>
+						  <td>{{s.srollno}}</td>
+						  <td>{{s.semail}}</td>
+						  <td><a href="{% url 'student_profile' %}?mail={{s.semail}}"><i class="fas fa-info-circle fa-lg text-info"></i></a></td>
+						</tr>
+						{%endfor%}
+      					{%endif%}
+					</tbody>
+				</table>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!----------------------------------------Faculity Batch End---------------------------------------------->  
+   
+  
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'aos-master/dist/aos.js' %}"></script>
+  <script src="{% static 'js/search.js' %}"></script>
+  <script>  AOS.init();</script>
+  </body>
